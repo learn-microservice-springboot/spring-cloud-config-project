@@ -1,0 +1,11 @@
+delivery-service:
+  message: "Welcome to FoodApp Delivery APIs QA support"
+  contactDetails:
+    name: "Robin Uthapa - Test Manager"
+    email: "Robin.utahapa@foodApp.com"
+    onCallSupport:
+      - (123) 323-6778
+      - (009) 123-0909
+
+build:
+  version: 2.1.0

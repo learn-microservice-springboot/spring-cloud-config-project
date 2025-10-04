@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: foodapp-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sayan4326/microservice-config.git
+          default-label: main
+          search-paths: bank-application/delivery-service
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
+encrypt:
+  key: "Q35WDWJKNF943UNFIUSN938NI4UBF938FUBWOBFKBSJKBFSBFBJDBF"
+                  
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - busrefresh
+        - monitor

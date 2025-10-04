@@ -1,0 +1,21 @@
+spring:
+    application:
+       name: delivery-service
+       version: 1.0
+    profiles:
+      active: qa
+    config:
+      import: "optional:configserver:http://localhost:9090" 
+    rabbitmq:
+      host: "localhost"
+      port: 5672
+      username: "guest"
+      password: "guest"
+
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh

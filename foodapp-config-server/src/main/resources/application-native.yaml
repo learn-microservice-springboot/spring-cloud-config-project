@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: foodapp-config-server
+  cloud:
+    config:
+      server:
+        native:  
+          search-locations:
+            - classpath:config
+            - "file:///C:/Users/sayan/Code/Microservice With Springboot/bank-application/config/bank-application/delivery-service"
+
+encrypt:
+  key: "Q35WDWJKNF943UNFIUSN938NI4UBF938FUBWOBFKBSJKBFSBFBJDBF"
